@@ -1,0 +1,109 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #00334b;
+}
+
+.box {
+	text-align: center;
+	width: 700px;
+	margin: 0 auto;
+}
+
+.box h1 {
+	color: white;
+}
+
+.box form .text {
+	width: calc(100% - 110px);
+	height: 38px;
+	background: #ddd;
+	border: none;
+	border-radius: 5px;
+	padding:0 10px;
+	box-sizing: border-box;
+}
+.box form .sub{
+	width: 100px;
+	height: 40px;
+	background-color: lightblue;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.box ul{
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 10px;
+}
+.box > ul > li{
+	position: relative;
+	line-height: 40px;
+	background-color: #FFF;
+	border: 1px solid black;
+	height: 40px;
+	width: 100%;
+}
+.box ul li .ckd{
+	margin-left: 15px;
+}
+.box ul li .operate{
+	float: right;
+	margin-right: 15px;
+}
+.box ul li .operate span{
+	cursor: pointer;
+	color: gray;
+}
+.box ul li .detail-box{
+	position: absolute;
+	width: 290px;
+	background-color: #FFFFFF;
+	padding: 15px 10px;
+	top: 0;
+	right: 0;
+	transform: translate(102%,-10%);
+}
+.box ul li .detail-box .close{
+	float: right;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 25px;
+	cursor: pointer;
+}
+.box ul li .detail-box textarea{
+	width: 100%;
+	resize: none;
+	height: 100px;
+	box-sizing: border-box;
+}
+.box ul li .detail-box h3{
+	clear: both;
+	margin: 30px 0 13px 0;
+}
+.box ul li .detail-box input{
+	margin-bottom: 20px;
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	
+}
+.box ul li .detail-box input.detail-title-hide{
+	display: none;
+}
+.box ul li .detail-box p{
+	margin: 0;
+}
+.box ul li .detail-box .refresh{
+	height: 40px;
+	width: 100px;
+	background-color: lightblue;
+	border: none;
+	border-radius: 5px;
+	margin: 0;
+}

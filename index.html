@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<h1>我的Todo</h1>
+			<form class="add-task">
+				<input type="text" name="text" class="text" placeholder="e.g.周六记得六点起床"/>
+				<input type="submit" name="sub" class="sub" value="提交" />
+			</form>
+			<ul class="task-list">
+				<li data-index = "">
+					<input type="checkbox" class="ckd" />
+					<span>约会</span>
+					<div class="operate">
+						<span class="delete">删除</span>
+						<span class="detail">详情</span>
+					</div>
+					<div class="detail-box">
+						<div class="close">X</div>
+						<h3 class="detail-title">约会</h3>
+						<input type="text" class="detail-title-hide"/>
+						<textarea class="detail-text"></textarea>
+						<p>提醒时间</p>
+						<input type="datetime" class="detail-time">
+						<input type="button" class="refresh" value="更新" />
+					</div>
+				</li>
+				<!--<li data-index = "">
+					<input type="checkbox" class="ckd" />
+					<span>晚餐</span>
+					<div class="operate">
+						<span class="delete">删除</span>
+						<span class="detail">详情</span>
+					</div>
+					<div class="detail-box">
+						<div class="close">X</div>
+						<h3 class="detail-title">晚餐</h3>
+						<input type="text" class="detail-title-hide"/>
+						<span>提醒时间</span>
+						<input type="datetime" class="detail-time">
+						<input type="button" class="refresh" value="更新" />
+					</div>
+				</li>-->
+			</ul>
+		</div>
+	</body>
+</html>
+<script src="lib/jquery/dist/jquery.js"></script>
+<script src="lib/store2/dist/store2.js"></script>
+<script src="js/index.js"></script>
