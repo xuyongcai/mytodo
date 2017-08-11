@@ -5,12 +5,37 @@ body {
 	background-color: #00334b;
 }
 
+/*消息提示*/
+.msg{
+	height: 40px;
+	width: 100%;
+	background-color: orange;
+	text-align: center;
+	display: none;
+}
+.msg span{
+	display: inline-block;
+	height: 100%;
+	width: 100px;
+	line-height: 40px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.msg span:last-child{
+	margin-left: 50px;
+}
+.msg span:hover{
+	background-color: rgba(0,0,0,0.8);
+	color: white;	
+}
+/*消息提示  end*/
+
+
 .box {
 	text-align: center;
 	width: 700px;
 	margin: 0 auto;
 }
-
 .box h1 {
 	color: white;
 }
@@ -47,9 +72,24 @@ body {
 	height: 40px;
 	width: 100%;
 }
+.box ul li.completed{
+	opacity: 0.4;
+}
+.box ul li.completed:after{
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 82%;
+	background-color: #000000;
+	top: 50%;
+	left: 4%;
+	transform: translate(3px,-50%);
+}
 .box ul li .ckd{
 	margin-left: 15px;
 }
+
+/*详细弹窗*/
 .box ul li .operate{
 	float: right;
 	margin-right: 15px;
@@ -107,3 +147,4 @@ body {
 	border-radius: 5px;
 	margin: 0;
 }
+/*详细弹窗 end*/

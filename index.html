@@ -4,8 +4,14 @@
 		<meta charset="utf-8" />
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/ >
 	</head>
 	<body>
+		<audio id="music" src="alert.mp3" loop="loop"></audio>
+		<div class="msg">
+			<span class="msg-btn">什么任务</span>
+			<span class="msg-btn">我知道了 </span>
+		</div>
 		<div class="box">
 			<h1>我的Todo</h1>
 			<form class="add-task">
@@ -26,7 +32,7 @@
 						<input type="text" class="detail-title-hide"/>
 						<textarea class="detail-text"></textarea>
 						<p>提醒时间</p>
-						<input type="datetime" class="detail-time">
+						<input type="text" class="detail-time" id="datetimepicker" />
 						<input type="button" class="refresh" value="更新" />
 					</div>
 				</li>
@@ -42,7 +48,7 @@
 						<h3 class="detail-title">晚餐</h3>
 						<input type="text" class="detail-title-hide"/>
 						<span>提醒时间</span>
-						<input type="datetime" class="detail-time">
+						<input type="text" class="detail-time" id="datetimepicker" />
 						<input type="button" class="refresh" value="更新" />
 					</div>
 				</li>-->
